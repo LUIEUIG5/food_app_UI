@@ -1,8 +1,14 @@
 
 
-# The largest heading
-## To install
-###### npm -i
+# Restaurant UI
+## Using React
+###### Project
 
-## To run app  
-###### npm start
+## Members  
+###### 
+
+| Command | Description |
+| --- | --- |
+| npm -i | To install the app Lib |
+| npm start | To run app |
+| local:3000 | run app |
