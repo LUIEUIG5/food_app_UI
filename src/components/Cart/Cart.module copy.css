@@ -1,0 +1,322 @@
+/* .cart-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: scroll;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .actions {
+    text-align: right;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #8a2b06;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #5a1a01;
+    border-color: #5a1a01;
+    color: white;
+  }
+  
+  .actions .button--alt {
+    color: #8a2b06;
+  }
+  
+  .actions .button {
+    background-color: #8a2b06;
+    color: white;
+  } */
+
+
+.cart_plate {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+
+  position: absolute;
+  width: 409px;
+  height: 834px;
+  left: 785px;
+  top: 0px;
+
+  /* Base / Dark Bg 2 */
+
+  background: #1F1D2B;
+  border-radius: 8px;
+}
+
+
+.cart_main_items {
+  position: static;
+  width: 361px;
+  height: 454px;
+  left: 0px;
+  top: 156px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.cart_item_pelate{
+  /* Content / Items */
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: relative;
+  width: 361px;
+  height: 106px;
+
+}
+
+.cart_item_info {
+  position: static;
+  width: 361px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.cart_item_info_qty{
+  /* Form Elements / Textfield / Default */
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 14px 12px;
+
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 249px;
+  top: 0px;
+
+  /* Base / Form BG */
+
+  background: #2D303E;
+  /* Base / Dark Line */
+
+  border: 1px solid #393C49;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.cart_item_content_total_price {
+  /* Price */
+  position: absolute;
+  width: 43px;
+  height: 22px;
+  left: 318px;
+  top: 13px;
+
+  /* Body/Large - Medium */
+
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: right;
+
+  /* Text / Dark */
+
+  color: #3B5162;
+}
+
+.cart_item_content {
+  position: absolute;
+  width: 188px;
+  height: 40px;
+  left: 0px;
+  top: 4px;
+
+}
+
+.cart_item_content_image {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0px;
+  top: 4px;
+}
+
+.cart_item_content_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 140px;
+  height: 39px;
+  left: 48px;
+  top: 4px;
+}
+
+.cart_item_content_name {
+  /* Spicy seasoned sea... */
+  position: static;
+  width: 140px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+
+  /* Body / Normal - Medium */
+
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  /* or 18px */
+
+
+  /* Text / Dark */
+
+  color: #3B5162;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.cart_item_content_price {
+  /* $ 2.29 */
+  position: static;
+  width: 32px;
+  height: 17px;
+  left: 0px;
+  top: 22px;
+
+  /* Body / Small - Medium */
+
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  /* identical to box height, or 17px */
+
+
+  /* Text/Gray */
+
+  color: #889898;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 4px 0px;
+
+}
+
+.cart_item_edit {
+  /* Note */
+  position: static;
+  width: 361px;
+  height: 48px;
+  left: 0px;
+  top: 58px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+
+.cart_item_edit_note{
+  /* Form Elements / Textfield / Default */
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px;
+
+  position: absolute;
+  width: 297px;
+  height: 48px;
+  left: 0px;
+  top: 58px;
+
+  /* Base / Form BG */
+
+  background: #2D303E;
+  /* Base / Dark Line */
+
+  border: 1px solid #393C49;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.cart_item_edit_del{
+  /* Button */
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px;
+
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 313px;
+  top: 58px;
+
+  /* Primary Color */
+
+  border: 1px solid #EA7C69;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
